@@ -1,0 +1,89 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="pinces" version="3">
+  <DEPS>
+    <ID name="pinces" mc="Class" uid="365ed00c-ab30-4124-89ce-bc789721f2b2"/>
+    <EXTID name="manipuler" mc="Interface" uid="c9e2e1fe-af1e-4f46-8fbc-b39a8346a40d"/>
+    <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="pinces" mc="Class" uid="365ed00c-ab30-4124-89ce-bc789721f2b2"/>
+    <PID name="cooavance" mc="Package" uid="ccc0d6f7-4da8-4ca3-ab7f-a107ca491415"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[pinces]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedOperation">
+        <OBJECT>
+          <ID name="saisir" mc="Operation" uid="144bf9ea-a6ab-484a-866a-cb3eb5a6b4d4"/>
+          <PID name="pinces" mc="Class" uid="365ed00c-ab30-4124-89ce-bc789721f2b2"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[saisir]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Redefines">
+              <REFOBJ>
+                <ID name="saisir" mc="Operation" uid="b8d1167f-0511-4e10-bb2c-8eef0964ac12"/>
+                <PID name="manipuler" mc="Interface" uid="c9e2e1fe-af1e-4f46-8fbc-b39a8346a40d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="relacher" mc="Operation" uid="eb9c4f3a-b783-48db-a62f-8dc6bff468b7"/>
+          <PID name="pinces" mc="Class" uid="365ed00c-ab30-4124-89ce-bc789721f2b2"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[relacher]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Redefines">
+              <REFOBJ>
+                <ID name="relacher" mc="Operation" uid="38bbc3f1-679e-40de-91a6-ea88919f60d1"/>
+                <PID name="manipuler" mc="Interface" uid="c9e2e1fe-af1e-4f46-8fbc-b39a8346a40d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Realized">
+        <OBJECT>
+          <ID name="InterfaceRealization" mc="InterfaceRealization" uid="1864ce47-02ac-4730-b5dd-8d12d469e362"/>
+          <PID name="pinces" mc="Class" uid="365ed00c-ab30-4124-89ce-bc789721f2b2"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[InterfaceRealization]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Implemented">
+              <ID name="manipuler" mc="Interface" uid="c9e2e1fe-af1e-4f46-8fbc-b39a8346a40d"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

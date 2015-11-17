@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="cooavance" version="3">
+  <DEPS>
+    <ID name="cooavance" mc="Package" uid="ccc0d6f7-4da8-4ca3-ab7f-a107ca491415"/>
+    <COMPID name="AutoTracteur" mc="Class" uid="e75e6c46-6660-4993-a9dc-613cd78c6968"/>
+    <COMPID name="Casier" mc="Class" uid="efc5ead0-bc1a-4ba5-93f6-107e7c410f15"/>
+    <COMPID name="Deplacement" mc="Interface" uid="f909aa3e-730f-4e1d-a2c0-177287b0cf77"/>
+    <COMPID name="Deplacement" mc="Class" uid="fba0bcdc-6d56-493d-b33b-8307033117ae"/>
+    <COMPID name="Drone" mc="Class" uid="504e14cf-ebc5-4cfd-92e7-bb217b355c2b"/>
+    <COMPID name="Magnetiser" mc="Class" uid="106fb295-f0aa-45f7-bdb1-0f84ffe16fdf"/>
+    <COMPID name="Manipuler" mc="Interface" uid="c9e2e1fe-af1e-4f46-8fbc-b39a8346a40d"/>
+    <COMPID name="Manipuler" mc="Class" uid="00f74dd0-f8e8-40b6-9362-6bb6bba170ed"/>
+    <COMPID name="Robot" mc="Class" uid="aa205be9-fdda-42a2-bffd-bf547e151fa0"/>
+    <COMPID name="Rouler" mc="Class" uid="fdd7e0ee-7ae5-4336-b22d-779eabe1914d"/>
+    <COMPID name="Voler" mc="Class" uid="9be620fc-f700-4abc-962f-9cda504a69e8"/>
+    <COMPID name="overview diagram" mc="ClassDiagram" uid="2d2cdce7-06a7-4ac8-92a0-1f4dc4a61a0e"/>
+    <COMPID name="pinces" mc="Class" uid="365ed00c-ab30-4124-89ce-bc789721f2b2"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="cooavance" mc="Package" uid="ccc0d6f7-4da8-4ca3-ab7f-a107ca491415"/>
+    <PID name="cooAvance" mc="Project" uid="81d1c5d3-1838-4a87-b4c6-d74bfa869abc"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[cooavance]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Deplacement" mc="Interface" uid="f909aa3e-730f-4e1d-a2c0-177287b0cf77"/>
+        <COMPID name="Voler" mc="Class" uid="9be620fc-f700-4abc-962f-9cda504a69e8"/>
+        <COMPID name="Rouler" mc="Class" uid="fdd7e0ee-7ae5-4336-b22d-779eabe1914d"/>
+        <COMPID name="Robot" mc="Class" uid="aa205be9-fdda-42a2-bffd-bf547e151fa0"/>
+        <COMPID name="Casier" mc="Class" uid="efc5ead0-bc1a-4ba5-93f6-107e7c410f15"/>
+        <COMPID name="Manipuler" mc="Interface" uid="c9e2e1fe-af1e-4f46-8fbc-b39a8346a40d"/>
+        <COMPID name="Magnetiser" mc="Class" uid="106fb295-f0aa-45f7-bdb1-0f84ffe16fdf"/>
+        <COMPID name="pinces" mc="Class" uid="365ed00c-ab30-4124-89ce-bc789721f2b2"/>
+        <COMPID name="Deplacement" mc="Class" uid="fba0bcdc-6d56-493d-b33b-8307033117ae"/>
+        <COMPID name="Manipuler" mc="Class" uid="00f74dd0-f8e8-40b6-9362-6bb6bba170ed"/>
+        <COMPID name="Drone" mc="Class" uid="504e14cf-ebc5-4cfd-92e7-bb217b355c2b"/>
+        <COMPID name="AutoTracteur" mc="Class" uid="e75e6c46-6660-4993-a9dc-613cd78c6968"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="overview diagram" mc="ClassDiagram" uid="2d2cdce7-06a7-4ac8-92a0-1f4dc4a61a0e"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
