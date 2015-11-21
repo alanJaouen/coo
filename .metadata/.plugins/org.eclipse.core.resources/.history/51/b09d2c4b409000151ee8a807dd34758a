@@ -1,0 +1,16 @@
+import com.modeliosoft.modelio.javadesigner.annotations.objid;
+
+@objid ("9620aceb-1e5f-441d-8e0b-6237f401f026")
+public class Abs extends Freinage {
+    @objid ("1aaa8836-6e65-4926-a587-eb8b4ddf06f2")
+    public static final int prixAbs = 2000;
+
+    @objid ("944d52dc-2958-4ea5-8495-a9fe315cf851")
+    public int prix() {
+    }
+
+    @objid ("e49303e5-fa06-497b-89bb-7ed52f03660a")
+    public String toString() {
+    }
+
+}

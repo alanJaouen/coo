@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="cooavancetd3" version="3">
+  <DEPS>
+    <ID name="cooavancetd3" mc="Package" uid="7842022a-2ade-4054-b95e-6b62b5a3bcd9"/>
+    <COMPID name="Abs" mc="Class" uid="fba927c1-6522-44f1-a950-f2f47eeb464c"/>
+    <COMPID name="Course" mc="Class" uid="3ce96c8d-0386-41e4-9c47-ae27b02587e2"/>
+    <COMPID name="Diesel" mc="Class" uid="bc2e2c50-f487-4347-9109-4d25888757cb"/>
+    <COMPID name="Essence" mc="Class" uid="ddb97326-323b-4f0a-a454-2f271616e984"/>
+    <COMPID name="Ferrari" mc="Class" uid="11c8ce96-af1d-471f-9339-d85106eb731b"/>
+    <COMPID name="Freinage" mc="Class" uid="76949bae-a698-43c0-8cef-ff510f2d0aa6"/>
+    <COMPID name="FreinageMagnetique" mc="Class" uid="1efaf3af-294b-42ac-a4d6-98298a5a6cbb"/>
+    <COMPID name="Motorisation" mc="Class" uid="45752107-f860-450a-8d55-bf4c011e4502"/>
+    <COMPID name="Porsche" mc="Class" uid="15f67580-00ff-46a1-b103-2f2cbee30709"/>
+    <COMPID name="Voiture" mc="Class" uid="244456dd-3e95-4f29-930a-b6f61d67e01e"/>
+    <COMPID name="java" mc="Package" uid="733141ef-a46a-4223-b786-bd3c456671f1"/>
+    <COMPID name="overview diagram" mc="ClassDiagram" uid="57a0ea61-5c6e-426f-b6a4-5d48a6f75df9"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="cooavancetd3" mc="Package" uid="7842022a-2ade-4054-b95e-6b62b5a3bcd9"/>
+    <PID name="cooAvanceTD3" mc="Project" uid="1050a25a-4881-4eba-b2c9-0381383877c6"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[cooavancetd3]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="java" mc="Package" uid="733141ef-a46a-4223-b786-bd3c456671f1"/>
+        <COMPID name="FreinageMagnetique" mc="Class" uid="1efaf3af-294b-42ac-a4d6-98298a5a6cbb"/>
+        <COMPID name="Ferrari" mc="Class" uid="11c8ce96-af1d-471f-9339-d85106eb731b"/>
+        <COMPID name="Diesel" mc="Class" uid="bc2e2c50-f487-4347-9109-4d25888757cb"/>
+        <COMPID name="Abs" mc="Class" uid="fba927c1-6522-44f1-a950-f2f47eeb464c"/>
+        <COMPID name="Freinage" mc="Class" uid="76949bae-a698-43c0-8cef-ff510f2d0aa6"/>
+        <COMPID name="Essence" mc="Class" uid="ddb97326-323b-4f0a-a454-2f271616e984"/>
+        <COMPID name="Course" mc="Class" uid="3ce96c8d-0386-41e4-9c47-ae27b02587e2"/>
+        <COMPID name="Porsche" mc="Class" uid="15f67580-00ff-46a1-b103-2f2cbee30709"/>
+        <COMPID name="Voiture" mc="Class" uid="244456dd-3e95-4f29-930a-b6f61d67e01e"/>
+        <COMPID name="Motorisation" mc="Class" uid="45752107-f860-450a-8d55-bf4c011e4502"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="overview diagram" mc="ClassDiagram" uid="57a0ea61-5c6e-426f-b6a4-5d48a6f75df9"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
