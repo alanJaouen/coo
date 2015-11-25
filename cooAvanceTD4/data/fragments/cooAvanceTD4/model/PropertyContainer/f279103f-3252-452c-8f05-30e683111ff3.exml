@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="cooAvanceTD4" version="3">
+  <DEPS>
+    <ID name="cooAvanceTD4" mc="PropertyContainer" uid="f279103f-3252-452c-8f05-30e683111ff3"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="cooAvanceTD4" mc="PropertyContainer" uid="f279103f-3252-452c-8f05-30e683111ff3"/>
+    <PID name="cooAvanceTD4" mc="AnalystProject" uid="8134b956-4f1b-47a7-83bd-0554134f6e53"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[cooAvanceTD4]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

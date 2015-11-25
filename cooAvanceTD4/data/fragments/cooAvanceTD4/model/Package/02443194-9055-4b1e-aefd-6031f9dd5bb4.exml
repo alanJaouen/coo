@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="cooavancetd4" version="3">
+  <DEPS>
+    <ID name="cooavancetd4" mc="Package" uid="02443194-9055-4b1e-aefd-6031f9dd5bb4"/>
+    <COMPID name="A320" mc="Class" uid="6cb60d97-633c-460d-a47d-5c5a6eacdbfc"/>
+    <COMPID name="A380" mc="Class" uid="03fbf038-8527-4e2f-8366-4290f9b81245"/>
+    <COMPID name="B737" mc="Class" uid="e5f7bf5c-693e-4ff4-8139-3c53f206c800"/>
+    <COMPID name="B747" mc="Class" uid="fe798832-9756-4be4-b702-fc2c2b102c86"/>
+    <COMPID name="Fuselage" mc="Class" uid="b2b07458-bcc5-4676-b0f1-147a51e8781b"/>
+    <COMPID name="Jet" mc="Class" uid="c7a7afb6-bd33-4903-9415-bc6c2223f5e4"/>
+    <COMPID name="Reacteur" mc="Class" uid="3c883d5a-d7f7-41bd-b4e5-d249744e545e"/>
+    <COMPID name="RollRoyce" mc="Class" uid="0ddc76a8-fe8d-4ff8-ae02-5a14bae14f50"/>
+    <COMPID name="Trent" mc="Class" uid="4ea24927-16ea-4100-9b38-072bb6cab499"/>
+    <COMPID name="UsineJet" mc="Class" uid="911a65ae-43de-495c-9441-6091e0e14ec5"/>
+    <COMPID name="UsineJetAirbus" mc="Class" uid="56644127-3f22-4e44-a96f-a4f4f15a3693"/>
+    <COMPID name="UsineJetBoeing" mc="Class" uid="e6633a6d-1670-4459-9da8-a872ae76ecf6"/>
+    <COMPID name="java" mc="Package" uid="849a55a8-28cb-4388-90dc-58fe1ff32359"/>
+    <COMPID name="overview diagram" mc="ClassDiagram" uid="aa4db96b-7975-4a24-8139-270f8df75650"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="cooavancetd4" mc="Package" uid="02443194-9055-4b1e-aefd-6031f9dd5bb4"/>
+    <PID name="cooAvanceTD4" mc="Project" uid="60845728-1e59-4c3a-a13a-46d07d0369c7"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[cooavancetd4]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Fuselage" mc="Class" uid="b2b07458-bcc5-4676-b0f1-147a51e8781b"/>
+        <COMPID name="Reacteur" mc="Class" uid="3c883d5a-d7f7-41bd-b4e5-d249744e545e"/>
+        <COMPID name="RollRoyce" mc="Class" uid="0ddc76a8-fe8d-4ff8-ae02-5a14bae14f50"/>
+        <COMPID name="Trent" mc="Class" uid="4ea24927-16ea-4100-9b38-072bb6cab499"/>
+        <COMPID name="Jet" mc="Class" uid="c7a7afb6-bd33-4903-9415-bc6c2223f5e4"/>
+        <COMPID name="A320" mc="Class" uid="6cb60d97-633c-460d-a47d-5c5a6eacdbfc"/>
+        <COMPID name="A380" mc="Class" uid="03fbf038-8527-4e2f-8366-4290f9b81245"/>
+        <COMPID name="B737" mc="Class" uid="e5f7bf5c-693e-4ff4-8139-3c53f206c800"/>
+        <COMPID name="B747" mc="Class" uid="fe798832-9756-4be4-b702-fc2c2b102c86"/>
+        <COMPID name="java" mc="Package" uid="849a55a8-28cb-4388-90dc-58fe1ff32359"/>
+        <COMPID name="UsineJet" mc="Class" uid="911a65ae-43de-495c-9441-6091e0e14ec5"/>
+        <COMPID name="UsineJetAirbus" mc="Class" uid="56644127-3f22-4e44-a96f-a4f4f15a3693"/>
+        <COMPID name="UsineJetBoeing" mc="Class" uid="e6633a6d-1670-4459-9da8-a872ae76ecf6"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="overview diagram" mc="ClassDiagram" uid="aa4db96b-7975-4a24-8139-270f8df75650"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
