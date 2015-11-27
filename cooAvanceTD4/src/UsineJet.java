@@ -8,16 +8,22 @@ public abstract class UsineJet {
     @objid ("2cd7bb24-5688-4f94-81e5-287f04014704")
     private String ville;
 
-    @objid ("2407b658-54ee-4d5f-bdfd-db6b5e789ff6")
-    public void toString() {
-    }
+    @Override
+	public String toString() {
+		return "UsineJet [constructeur=" + constructeur + ", ville=" + ville + "]";
+	}
 
     @objid ("8c81686c-0098-4dda-977e-1c32354405b8")
-    public Jet fabriqueJet(String modele, String marque) {
-    }
+    public abstract Jet fabriqueJet(String modele, String marque);
 
     @objid ("3ced41f8-30ca-4eb8-bc67-4a95f584d14c")
-    public void UsineJet(String ville, String nom) {
-    }
+	public UsineJet(String constructeur, String ville) {
+		super();
+		this.constructeur = constructeur;
+		this.ville = ville;
+	}
+
+    
+
 
 }

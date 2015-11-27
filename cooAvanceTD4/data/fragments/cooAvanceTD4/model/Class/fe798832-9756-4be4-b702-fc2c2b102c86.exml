@@ -6,6 +6,7 @@
     <EXTID name="Jet" mc="Class" uid="c7a7afb6-bd33-4903-9415-bc6c2223f5e4"/>
     <EXTID name="Reacteur" mc="Class" uid="3c883d5a-d7f7-41bd-b4e5-d249744e545e"/>
     <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
     <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
     <FOREIGNID name="type" mc="TagType" uid="00000000-0000-3767-0000-000000000000"/>
   </DEPS>
@@ -116,6 +117,23 @@
             <LINK relation="Extension">
               <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
             </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="fe42cb79-6519-4a22-b724-5954529a5b99"/>
+                <PID name="B747" mc="Class" uid="fe798832-9756-4be4-b702-fc2c2b102c86"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[super("Boeing","747",fuselage,reacteur);]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
           </DEPENDENCIES>
         </OBJECT>
       </COMP>

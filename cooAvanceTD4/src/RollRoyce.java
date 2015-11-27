@@ -4,6 +4,7 @@ import com.modeliosoft.modelio.javadesigner.annotations.objid;
 public class RollRoyce extends Reacteur {
     @objid ("17244c0b-f516-4273-9aee-fa435a34dc77")
     public RollRoyce(int poids, int poussee) {
+    	super("RollRoyce",poids, poussee);
     }
 
 }

@@ -4,9 +4,13 @@
     <ID name="UsineJetAirbus" mc="Class" uid="56644127-3f22-4e44-a96f-a4f4f15a3693"/>
     <EXTID name="A320" mc="Class" uid="6cb60d97-633c-460d-a47d-5c5a6eacdbfc"/>
     <EXTID name="A380" mc="Class" uid="03fbf038-8527-4e2f-8366-4290f9b81245"/>
+    <EXTID name="ArrayList" mc="Class" uid="f93a38b8-1c2d-4c8d-a73b-59f94f3571ac"/>
     <EXTID name="Jet" mc="Class" uid="c7a7afb6-bd33-4903-9415-bc6c2223f5e4"/>
     <EXTID name="UsineJet" mc="Class" uid="911a65ae-43de-495c-9441-6091e0e14ec5"/>
     <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+    <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
     <FOREIGNID name="string" mc="DataType" uid="00000004-0000-000d-0000-000000000000"/>
   </DEPS>
   <OBJECT>
@@ -112,6 +116,70 @@
                 </DEPENDENCIES>
               </OBJECT>
             </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="4c613ef3-af29-4b55-9f05-6d62e726161f"/>
+                <PID name="UsineJetAirbus" mc="Class" uid="56644127-3f22-4e44-a96f-a4f4f15a3693"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[return j;]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="ae428b7b-1894-4451-a318-4021da1375d4"/>
+                <PID name="UsineJetAirbus" mc="Class" uid="56644127-3f22-4e44-a96f-a4f4f15a3693"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[Jet j= null;
+Fuselage f= null;
+ArrayList<Reacteur> r = new ArrayList<Reacteur>();
+
+
+if(modele.equals("320"))
+{
+    f= new Fuselage(30,120);
+    for(int i=0;i<2;i++)
+    {
+        if(marque.equals("RollRoyce"))
+            r.add(new RollRoyce(5,10));
+        else if(marque.equals("Trent"))
+            r.add(new RollRoyce(6,9));
+    }
+    
+    j=new A320(f,r);
+}    
+
+else if(modele.equals("380"))
+{
+    f= new Fuselage(110,550);
+    for(int i=0;i<4;i++)
+    {
+        if(marque.equals("RollRoyce"))
+            r.add(new RollRoyce(8,12));
+        else if(marque.equals("Trent"))
+            r.add(new RollRoyce(9,13));
+    }
+    
+    j=new A380(f,r);
+}
+]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
@@ -153,6 +221,26 @@
                 </DEPENDENCIES>
               </OBJECT>
             </COMP>
+            <LINK relation="Extension">
+              <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="448d951d-bc4b-46ba-886e-346b41658829"/>
+                <PID name="UsineJetAirbus" mc="Class" uid="56644127-3f22-4e44-a96f-a4f4f15a3693"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[super("Airbus",ville);]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
           </DEPENDENCIES>
         </OBJECT>
       </COMP>
@@ -168,6 +256,22 @@
           <DEPENDENCIES>
             <LINK relation="SuperType">
               <ID name="UsineJet" mc="Class" uid="911a65ae-43de-495c-9441-6091e0e14ec5"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedImport">
+        <OBJECT>
+          <ID name="" mc="ElementImport" uid="631eda8e-2bf5-47a7-925d-17d94757fb43"/>
+          <PID name="UsineJetAirbus" mc="Class" uid="56644127-3f22-4e44-a96f-a4f4f15a3693"/>
+          <ATTRIBUTES>
+            <ATT name="Visibility">Private</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="ImportedElement">
+              <ID name="ArrayList" mc="Class" uid="f93a38b8-1c2d-4c8d-a73b-59f94f3571ac"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>

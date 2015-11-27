@@ -5,6 +5,7 @@ import com.modeliosoft.modelio.javadesigner.annotations.objid;
 public class B737 extends Jet {
     @objid ("afff92a1-3e6b-493b-b406-41b46c3d7ec2")
     public B737(Fuselage fuselage, ArrayList<Reacteur> reacteur) {
+    	super("Boeing","737",fuselage,reacteur);
     }
 
 }

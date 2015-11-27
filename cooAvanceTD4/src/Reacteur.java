@@ -11,12 +11,40 @@ public class Reacteur {
     @objid ("17fb6189-12a1-41cb-9cbe-f548b9229a99")
     private int poussee;
 
-    @objid ("9fb5681c-d2f5-47dd-a2f5-52d5ccdd8cf7")
-    public void toString() {
-    }
+    @Override
+	public String toString() {
+		return "Reacteur [marque=" + marque + ", poids=" + poids + ", poussee=" + poussee + "]";
+	}
 
-    @objid ("a4ba911a-c8df-48eb-b070-7f31a2dbb0f6")
-    public Reacteur(String marque, String poids, String poussee) {
-    }
+    public String getMarque() {
+		return this.marque;
+	}
 
+	public void setMarque(String marque) {
+		this.marque = marque;
+	}
+
+	public int getPoids() {
+		return this.poids;
+	}
+	
+	@objid ("a4ba911a-c8df-48eb-b070-7f31a2dbb0f6")
+	public Reacteur(String marque, int poids, int poussee) {
+		super();
+		this.marque = marque;
+		this.poids = poids;
+		this.poussee = poussee;
+	}
+
+	public void setPoids(int poids) {
+		this.poids = poids;
+	}
+
+	public int getPoussee() {
+		return this.poussee;
+	}
+
+	public void setPoussee(int poussee) {
+		this.poussee = poussee;
+	}
 }

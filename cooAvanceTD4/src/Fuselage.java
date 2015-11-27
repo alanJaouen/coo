@@ -8,16 +8,37 @@ public class Fuselage {
     @objid ("03a53449-5fb5-4abc-a41e-449a3b51db12")
     private int capacite;
 
-    @objid ("651a75f1-9d37-45b3-88d3-1c539efd5f93")
-    public void toString() {
-    }
+    @Override
+	public String toString() {
+		return "Fuselage [poids=" + poids + "t , capacite=" + capacite + "]";
+	}
 
     @objid ("d50db0be-199d-4497-acf4-b944f79788ae")
-    public Fuselage(int poids, String capacite) {
+    public Fuselage(int poids, int capacite) {
+    	super();
+    	this.poids=poids;
+    	this.capacite=capacite;
     }
 
     @objid ("30832725-e8cd-4f25-aab6-3ae4c1bce398")
     public Fuselage() {
+    	this(0,0);
     }
+
+	public int getPoids() {
+		return this.poids;
+	}
+
+	public void setPoids(int poids) {
+		this.poids = poids;
+	}
+
+	public int getCapacite() {
+		return this.capacite;
+	}
+
+	public void setCapacite(int capacite) {
+		this.capacite = capacite;
+	}
 
 }

@@ -2,13 +2,14 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Jet" version="3">
   <DEPS>
     <ID name="Jet" mc="Class" uid="c7a7afb6-bd33-4903-9415-bc6c2223f5e4"/>
-    <EXTID name="ArrayList" mc="Class" uid="f93a38b8-1c2d-4c8d-a73b-59f94f3571ac"/>
     <EXTID name="Fuselage" mc="Class" uid="b2b07458-bcc5-4676-b0f1-147a51e8781b"/>
-    <EXTID name="List" mc="Interface" uid="f315fcd5-c44d-422b-9291-8ff5d4df5b2d"/>
     <EXTID name="Reacteur" mc="Class" uid="3c883d5a-d7f7-41bd-b4e5-d249744e545e"/>
+    <FOREIGNID name="JavaAnnotation" mc="NoteType" uid="000c0b48-0000-3aa1-0000-000000000000"/>
     <FOREIGNID name="JavaClass" mc="Stereotype" uid="01ec23a8-0000-0258-0000-000000000000"/>
+    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
     <FOREIGNID name="JavaInitValue" mc="NoteType" uid="00380080-0000-0994-0000-000000000000"/>
     <FOREIGNID name="JavaNoInitValue" mc="TagType" uid="00d007fc-0003-bf52-0000-000000000000"/>
+    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
     <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
     <FOREIGNID name="string" mc="DataType" uid="00000004-0000-000d-0000-000000000000"/>
     <FOREIGNID name="type" mc="TagType" uid="00000000-0000-3766-0000-000000000000"/>
@@ -31,7 +32,7 @@
     <DEPENDENCIES>
       <COMP relation="OwnedOperation">
         <OBJECT>
-          <ID name="jet" mc="Operation" uid="e0a67e65-66dd-4d7d-a5c6-cd6a3bc7df05"/>
+          <ID name="Jet" mc="Operation" uid="e0a67e65-66dd-4d7d-a5c6-cd6a3bc7df05"/>
           <PID name="Jet" mc="Class" uid="c7a7afb6-bd33-4903-9415-bc6c2223f5e4"/>
           <ATTRIBUTES>
             <ATT name="Concurrency">false</ATT>
@@ -40,11 +41,57 @@
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[jet]]></ATT>
+            <ATT name="Name"><![CDATA[Jet]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <COMP relation="IO">
+              <OBJECT>
+                <ID name="marque" mc="Parameter" uid="1cbe79c9-7bd3-48e4-ba1b-b9bfa257a7ad"/>
+                <PID name="Jet" mc="Class" uid="c7a7afb6-bd33-4903-9415-bc6c2223f5e4"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[marque]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="string" mc="DataType" uid="00000004-0000-000d-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="modele" mc="Parameter" uid="06fe2577-a095-4cf8-a2ae-39c9141de3a7"/>
+                <PID name="Jet" mc="Class" uid="c7a7afb6-bd33-4903-9415-bc6c2223f5e4"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[modele]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="string" mc="DataType" uid="00000004-0000-000d-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
               <OBJECT>
                 <ID name="fuselage" mc="Parameter" uid="11cdbdaf-dc68-4e29-964b-b431a7bddc58"/>
                 <PID name="Jet" mc="Class" uid="c7a7afb6-bd33-4903-9415-bc6c2223f5e4"/>
@@ -117,31 +164,51 @@
                   </COMP>
                 </DEPENDENCIES>
               </OBJECT>
+            </COMP>
+            <LINK relation="Extension">
+              <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
+            </LINK>
+            <COMP relation="Descriptor">
               <OBJECT>
-                <ID name="marque" mc="Parameter" uid="1cbe79c9-7bd3-48e4-ba1b-b9bfa257a7ad"/>
+                <ID name="" mc="Note" uid="50106c73-453f-4f80-a259-2e549e35ec25"/>
                 <PID name="Jet" mc="Class" uid="c7a7afb6-bd33-4903-9415-bc6c2223f5e4"/>
                 <ATTRIBUTES>
-                  <ATT name="ParameterPassing">In</ATT>
-                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
-                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
-                  <ATT name="TypeConstraint"></ATT>
-                  <ATT name="DefaultValue"></ATT>
-                  <ATT name="IsOrdered">false</ATT>
-                  <ATT name="IsUnique">false</ATT>
-                  <ATT name="IsException">false</ATT>
-                  <ATT name="IsStream">false</ATT>
-                  <ATT name="Effect">ReadEffect</ATT>
-                  <ATT name="Name"><![CDATA[marque]]></ATT>
+                  <ATT name="Content"><![CDATA[super();
+this.marque = marque;
+this.modele = modele;
+this.fuselage = fuselage;
+this.reacteur = reacteur;
+]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
-                  <LINK relation="Type">
-                    <FOREIGNID name="string" mc="DataType" uid="00000004-0000-000d-0000-000000000000"/>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="toString" mc="Operation" uid="df9daf11-8ffa-450e-ac81-1b2ea79cc6d6"/>
+          <PID name="Jet" mc="Class" uid="c7a7afb6-bd33-4903-9415-bc6c2223f5e4"/>
+          <ATTRIBUTES>
+            <ATT name="Concurrency">false</ATT>
+            <ATT name="Final">false</ATT>
+            <ATT name="Passing">MethodOut</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[toString]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Return">
               <OBJECT>
-                <ID name="modele" mc="Parameter" uid="06fe2577-a095-4cf8-a2ae-39c9141de3a7"/>
+                <ID name="" mc="Parameter" uid="9deaf755-2dfc-44b2-9bb7-7618c6614617"/>
                 <PID name="Jet" mc="Class" uid="c7a7afb6-bd33-4903-9415-bc6c2223f5e4"/>
                 <ATTRIBUTES>
                   <ATT name="ParameterPassing">In</ATT>
@@ -154,7 +221,7 @@
                   <ATT name="IsException">false</ATT>
                   <ATT name="IsStream">false</ATT>
                   <ATT name="Effect">ReadEffect</ATT>
-                  <ATT name="Name"><![CDATA[modele]]></ATT>
+                  <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -164,9 +231,57 @@
                 </DEPENDENCIES>
               </OBJECT>
             </COMP>
-            <LINK relation="Extension">
-              <FOREIGNID name="create" mc="Stereotype" uid="00700680-0000-0204-0000-000000000000"/>
-            </LINK>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Note" uid="554f8cd8-624f-460b-ada3-e103873ad61a"/>
+                <PID name="Jet" mc="Class" uid="c7a7afb6-bd33-4903-9415-bc6c2223f5e4"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[@Override]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaAnnotation" mc="NoteType" uid="000c0b48-0000-3aa1-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="96cb27a4-9d87-49aa-bc8d-a4d8a4f1dccd"/>
+                <PID name="Jet" mc="Class" uid="c7a7afb6-bd33-4903-9415-bc6c2223f5e4"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[return "Jet [marque=" + marque + ", modele=" + modele + ", fuselage=" + fuselage + ", reacteur=" + str
+                 + "]";]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaReturned" mc="NoteType" uid="003800a8-0000-0190-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Note" uid="8ed09bf6-7626-4267-b69c-4c4aeb417114"/>
+                <PID name="Jet" mc="Class" uid="c7a7afb6-bd33-4903-9415-bc6c2223f5e4"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[String str="";
+for(int i=0; i<this.reacteur.size();i++)
+    str+=("\n\t-"+this.reacteur.get(i).toString());
+]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="JavaCode" mc="NoteType" uid="003800a8-0000-018e-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
           </DEPENDENCIES>
         </OBJECT>
       </COMP>
@@ -196,7 +311,7 @@
             </LINK>
             <COMP relation="Tag">
               <OBJECT>
-                <ID name="" mc="TaggedValue" uid="937f8e93-3437-4ad4-afe1-03ff662803e9"/>
+                <ID name="" mc="TaggedValue" uid="f9b37704-b41e-49c1-94bb-8f6ea11ffbd2"/>
                 <PID name="Jet" mc="Class" uid="c7a7afb6-bd33-4903-9415-bc6c2223f5e4"/>
                 <ATTRIBUTES>
                   <ATT name="Name"></ATT>
@@ -236,7 +351,7 @@
             </LINK>
             <COMP relation="Tag">
               <OBJECT>
-                <ID name="" mc="TaggedValue" uid="0576036c-68d5-464d-a5b6-2c8e7d9f80fb"/>
+                <ID name="" mc="TaggedValue" uid="f461cccc-d1df-4b5e-b22c-0c52f41c0e42"/>
                 <PID name="Jet" mc="Class" uid="c7a7afb6-bd33-4903-9415-bc6c2223f5e4"/>
                 <ATTRIBUTES>
                   <ATT name="Name"></ATT>
@@ -317,7 +432,7 @@
             </COMP>
             <COMP relation="Tag">
               <OBJECT>
-                <ID name="" mc="TaggedValue" uid="b02c5fe2-2f07-491c-9136-b3a28975a894"/>
+                <ID name="" mc="TaggedValue" uid="e0975a10-8a51-4299-b6c1-4a783e891152"/>
                 <PID name="Jet" mc="Class" uid="c7a7afb6-bd33-4903-9415-bc6c2223f5e4"/>
                 <ATTRIBUTES>
                   <ATT name="Name"></ATT>
@@ -437,36 +552,6 @@
                 </DEPENDENCIES>
               </OBJECT>
             </COMP>
-          </DEPENDENCIES>
-        </OBJECT>
-      </COMP>
-      <COMP relation="OwnedImport">
-        <OBJECT>
-          <ID name="" mc="ElementImport" uid="e550f7ee-9608-4604-8659-3fb7102c98e1"/>
-          <PID name="Jet" mc="Class" uid="c7a7afb6-bd33-4903-9415-bc6c2223f5e4"/>
-          <ATTRIBUTES>
-            <ATT name="Visibility">Private</ATT>
-            <ATT name="Name"></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="ImportedElement">
-              <ID name="ArrayList" mc="Class" uid="f93a38b8-1c2d-4c8d-a73b-59f94f3571ac"/>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="" mc="ElementImport" uid="421d374b-5324-4db8-9ab7-d711555ade14"/>
-          <PID name="Jet" mc="Class" uid="c7a7afb6-bd33-4903-9415-bc6c2223f5e4"/>
-          <ATTRIBUTES>
-            <ATT name="Visibility">Private</ATT>
-            <ATT name="Name"></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="ImportedElement">
-              <ID name="List" mc="Interface" uid="f315fcd5-c44d-422b-9291-8ff5d4df5b2d"/>
-            </LINK>
           </DEPENDENCIES>
         </OBJECT>
       </COMP>
