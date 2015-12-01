@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="cooavancetd5" version="3">
+  <DEPS>
+    <ID name="cooavancetd5" mc="Package" uid="0415c336-11cd-4194-8e9d-28a14209ce64"/>
+    <COMPID name="Noeud" mc="Class" uid="dd873a15-a0be-402b-9100-0df736c8786b"/>
+    <COMPID name="NoeudObservateur" mc="Class" uid="da16f547-51d5-4a9c-bc54-4f403d6a98a9"/>
+    <COMPID name="NoeudSujet" mc="Class" uid="f6b09824-2e1a-4d89-b048-3286cc3f1300"/>
+    <COMPID name="NoeudSujetObservateur" mc="Class" uid="8600be3a-6f85-44eb-b163-bd22d50af924"/>
+    <COMPID name="Observateur" mc="Interface" uid="d2f84b74-b506-4457-98bc-92318d0a8d32"/>
+    <COMPID name="Sujet" mc="Interface" uid="60e523d1-fb20-41dc-b372-33d06d4ed5d2"/>
+    <COMPID name="java" mc="Package" uid="5e481639-87eb-4634-872d-2fcbc0d89c90"/>
+    <COMPID name="overview diagram" mc="ClassDiagram" uid="f06c2155-033a-4682-893f-36d87343765e"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="cooavancetd5" mc="Package" uid="0415c336-11cd-4194-8e9d-28a14209ce64"/>
+    <PID name="cooAvanceTD5" mc="Project" uid="a50e8d60-20ec-4030-8b45-f83b26e0ce04"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[cooavancetd5]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="java" mc="Package" uid="5e481639-87eb-4634-872d-2fcbc0d89c90"/>
+        <COMPID name="NoeudSujetObservateur" mc="Class" uid="8600be3a-6f85-44eb-b163-bd22d50af924"/>
+        <COMPID name="NoeudSujet" mc="Class" uid="f6b09824-2e1a-4d89-b048-3286cc3f1300"/>
+        <COMPID name="Observateur" mc="Interface" uid="d2f84b74-b506-4457-98bc-92318d0a8d32"/>
+        <COMPID name="Noeud" mc="Class" uid="dd873a15-a0be-402b-9100-0df736c8786b"/>
+        <COMPID name="Sujet" mc="Interface" uid="60e523d1-fb20-41dc-b372-33d06d4ed5d2"/>
+        <COMPID name="NoeudObservateur" mc="Class" uid="da16f547-51d5-4a9c-bc54-4f403d6a98a9"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="overview diagram" mc="ClassDiagram" uid="f06c2155-033a-4682-893f-36d87343765e"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
