@@ -20,6 +20,7 @@ NoeudSujet  noeud0 = new NoeudSujet("noeud0", 0, 2) ;
 		
 		Observateur noeud3 = new NoeudObservateur(s2, "noeud3", 0, 3) ;
 		
+		
 		System.out.println(noeud0) ;
 		System.out.println(noeud1) ;
 		System.out.println(noeud2) ;

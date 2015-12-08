@@ -602,7 +602,7 @@ this.observateurs = new ArrayList<Observateur>() ;
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="" mc="TaggedValue" uid="03d879e1-6dd8-4348-a38e-f4fd1dd0ff92"/>
+                <ID name="" mc="TaggedValue" uid="b5d0d4de-3b8b-4d03-b970-ca041ae58a9b"/>
                 <PID name="NoeudSujet" mc="Class" uid="f6b09824-2e1a-4d89-b048-3286cc3f1300"/>
                 <ATTRIBUTES>
                   <ATT name="Name"></ATT>

@@ -643,7 +643,7 @@ this.setCapacite(uneCapacite);
             </LINK>
             <COMP relation="Tag">
               <OBJECT>
-                <ID name="" mc="TaggedValue" uid="f52da603-5ab1-460c-a71b-5fde5d2dd42b"/>
+                <ID name="" mc="TaggedValue" uid="50417a5c-c67b-46d9-9e17-06e771f8ec6a"/>
                 <PID name="Noeud" mc="Class" uid="dd873a15-a0be-402b-9100-0df736c8786b"/>
                 <ATTRIBUTES>
                   <ATT name="Name"></ATT>
@@ -683,7 +683,7 @@ this.setCapacite(uneCapacite);
             </LINK>
             <COMP relation="Tag">
               <OBJECT>
-                <ID name="" mc="TaggedValue" uid="e10510be-0ac8-45ee-aecc-3a3945560f1b"/>
+                <ID name="" mc="TaggedValue" uid="c7bcfe82-19f1-48d0-96ba-56cba265c418"/>
                 <PID name="Noeud" mc="Class" uid="dd873a15-a0be-402b-9100-0df736c8786b"/>
                 <ATTRIBUTES>
                   <ATT name="Name"></ATT>
@@ -723,7 +723,7 @@ this.setCapacite(uneCapacite);
             </LINK>
             <COMP relation="Tag">
               <OBJECT>
-                <ID name="" mc="TaggedValue" uid="56e6b40d-d763-4a21-bd71-5918fd5e31eb"/>
+                <ID name="" mc="TaggedValue" uid="4418d104-8572-4de0-a1d9-f87b1b118c6f"/>
                 <PID name="Noeud" mc="Class" uid="dd873a15-a0be-402b-9100-0df736c8786b"/>
                 <ATTRIBUTES>
                   <ATT name="Name"></ATT>
