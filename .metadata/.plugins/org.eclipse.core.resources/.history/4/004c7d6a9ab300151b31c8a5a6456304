@@ -1,0 +1,8 @@
+import com.modeliosoft.modelio.javadesigner.annotations.objid;
+
+@objid ("aa03eb6f-002f-4eaa-aeb1-5a6e83b0cbbf")
+public interface Commande {
+    @objid ("71aeec6f-5e28-4161-9103-ee99a9865c4d")
+    public abstract void executer(final String message);
+
+}

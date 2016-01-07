@@ -21,10 +21,10 @@ NoeudSujet  noeud0 = new NoeudSujet("noeud0", 0, 2) ;
 		Observateur noeud3 = new NoeudObservateur(s2, "noeud3", 0, 3) ;
 		
 		
-		System.out.println(noeud0) ;
+		System.out.println("Avant\n"+noeud0) ;
 		System.out.println(noeud1) ;
 		System.out.println(noeud2) ;
-		System.out.println(noeud3+"\n\n") ;
+		System.out.println(noeud3+"\nApres") ;
 		
 		noeud0.changementValeur(1) ;
 		

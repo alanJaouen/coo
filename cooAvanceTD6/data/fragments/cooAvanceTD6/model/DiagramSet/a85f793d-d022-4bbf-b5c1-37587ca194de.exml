@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="cooAvanceTD6" version="3">
+  <DEPS>
+    <ID name="cooAvanceTD6" mc="DiagramSet" uid="a85f793d-d022-4bbf-b5c1-37587ca194de"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="cooAvanceTD6" mc="DiagramSet" uid="a85f793d-d022-4bbf-b5c1-37587ca194de"/>
+    <PID name="cooAvanceTD6" mc="Project" uid="05daadd5-91b5-4626-b464-57c437c6ff18"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[cooAvanceTD6]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

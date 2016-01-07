@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="cooavancetd6" version="3">
+  <DEPS>
+    <ID name="cooavancetd6" mc="Package" uid="e8168bb0-ccfb-493d-ba19-e7ef84c6551d"/>
+    <COMPID name="Afficheur" mc="Class" uid="66543e16-2771-4995-a717-a3e788058a4e"/>
+    <COMPID name="Client" mc="Class" uid="b6b8a3ac-df71-4699-956b-d795c8208ba2"/>
+    <COMPID name="Commande" mc="Interface" uid="aa03eb6f-002f-4eaa-aeb1-5a6e83b0cbbf"/>
+    <COMPID name="Commande" mc="Class" uid="baa06cad-2f64-4958-ad34-2ecafaffc157"/>
+    <COMPID name="CommandeAfficherAuRevoir" mc="Class" uid="035d37cf-c45e-43be-92be-3c5bfc0a1a2e"/>
+    <COMPID name="CommandeAfficherBonjour" mc="Class" uid="c6da7ebc-4382-4241-91d9-54cb7146c681"/>
+    <COMPID name="CommandeEquation2" mc="Class" uid="90a442df-347d-4eda-bb1a-0d30b702f7c1"/>
+    <COMPID name="Equation2" mc="Class" uid="f1a9235b-72e4-44c9-843d-7c3d2e46cfad"/>
+    <COMPID name="GestionnaireTaches" mc="Class" uid="572982ca-2ce7-4fc9-8c82-5c0eefd231f9"/>
+    <COMPID name="java" mc="Package" uid="f83f84ae-b2f4-4e42-8912-c6c5b55475e2"/>
+    <COMPID name="overview diagram" mc="ClassDiagram" uid="d9b99db2-a5ed-458c-adef-0175e9078018"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="cooavancetd6" mc="Package" uid="e8168bb0-ccfb-493d-ba19-e7ef84c6551d"/>
+    <PID name="cooAvanceTD6" mc="Project" uid="05daadd5-91b5-4626-b464-57c437c6ff18"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[cooavancetd6]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="java" mc="Package" uid="f83f84ae-b2f4-4e42-8912-c6c5b55475e2"/>
+        <COMPID name="Afficheur" mc="Class" uid="66543e16-2771-4995-a717-a3e788058a4e"/>
+        <COMPID name="Equation2" mc="Class" uid="f1a9235b-72e4-44c9-843d-7c3d2e46cfad"/>
+        <COMPID name="GestionnaireTaches" mc="Class" uid="572982ca-2ce7-4fc9-8c82-5c0eefd231f9"/>
+        <COMPID name="Commande" mc="Interface" uid="aa03eb6f-002f-4eaa-aeb1-5a6e83b0cbbf"/>
+        <COMPID name="CommandeEquation2" mc="Class" uid="90a442df-347d-4eda-bb1a-0d30b702f7c1"/>
+        <COMPID name="CommandeAfficherBonjour" mc="Class" uid="c6da7ebc-4382-4241-91d9-54cb7146c681"/>
+        <COMPID name="CommandeAfficherAuRevoir" mc="Class" uid="035d37cf-c45e-43be-92be-3c5bfc0a1a2e"/>
+        <COMPID name="Commande" mc="Class" uid="baa06cad-2f64-4958-ad34-2ecafaffc157"/>
+        <COMPID name="Client" mc="Class" uid="b6b8a3ac-df71-4699-956b-d795c8208ba2"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="overview diagram" mc="ClassDiagram" uid="d9b99db2-a5ed-458c-adef-0175e9078018"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

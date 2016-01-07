@@ -36,7 +36,7 @@ public class NoeudSujet extends Noeud implements Sujet {
 
     @objid ("2eeb74c8-79c2-4e7e-8b3d-b924ef85eafc")
     public void changementValeur(int valeur) {
-    	this.setValeur(this.getValeur()+(valeur*this.getCapacite()));
+    	this.majValeur(valeur);
     	this.notifierObservateur() ;
     	
     }

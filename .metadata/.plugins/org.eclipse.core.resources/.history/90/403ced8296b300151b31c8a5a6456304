@@ -1,0 +1,16 @@
+import com.modeliosoft.modelio.javadesigner.annotations.objid;
+
+@objid ("c6da7ebc-4382-4241-91d9-54cb7146c681")
+public class CommandeAfficherBonjour implements Commande {
+    @objid ("4525be99-747f-4a7c-b894-3a0224481251")
+    public Afficheur afficheur;
+
+    @objid ("aa39a83a-e693-4e79-9992-2b7176437a6a")
+    public void execute(final String message) {
+    }
+
+    @objid ("989dc65b-a034-4c9a-9ce2-bf0e7208a5aa")
+    public void executer(final String message) {
+    }
+
+}

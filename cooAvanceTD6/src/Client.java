@@ -1,0 +1,49 @@
+import com.modeliosoft.modelio.javadesigner.annotations.objid;
+
+@objid ("b6b8a3ac-df71-4699-956b-d795c8208ba2")
+public class Client {
+    @objid ("46575439-0ff5-4e46-b339-db7243eeba1c")
+    public GestionnaireTaches gestionnaireTaches;
+
+    @objid ("38d61f7c-7ff8-439e-9c60-569788b30e9a")
+    public Afficheur afficheur;
+
+    @objid ("18dcfabf-cc61-4d7a-bc3f-6d1cb61c07c9")
+    public CommandeAfficherAuRevoir commandeAfficherAuRevoir;
+
+    @objid ("24b1a0fb-1fe1-4db0-93c1-0d0ca080a3e0")
+    public CommandeAfficherBonjour commandeAfficherBonjour;
+
+    @objid ("b488cba7-c077-426c-b227-6521ddab78b0")
+    public CommandeResoudreEquation2 commandeEquation2;
+
+    @objid ("4c615dcd-4571-4cb1-b18c-8b5403946ef5")
+    public Equation2 equation2;
+
+    @objid ("2d2544ee-67f5-41bd-a4b2-2c87e8e997ff")
+    public static void main(String[] args) {
+        // 1) on cree l'invocateur
+                    GestionnaireTaches g = new GestionnaireTaches() ;
+            
+        // 2) on cree les receveurs
+                    Afficheur a = new Afficheur() ;
+                    Equation2 e = new Equation2()  ;
+                    
+        // 3) on cree les Commandes
+                    Commande c1 = new CommandeAfficherBonjour(a)   ;
+                    Commande c2 = new CommandeAfficherAuRevoir(a)  ;
+                    Commande c3 = new CommandeResoudreEquation2(e) ;
+                    
+        // 4) on enregistre les commandes
+        //    dans l'invocateur
+                    g.ajouterTache(c1) ;
+                    g.ajouterTache(c2) ;
+                    g.ajouterTache(c3) ;
+        // 5) on active les commandes 
+        //    enregistrees
+                    g.executerLaTache(c1) ;
+                    g.executerLaTache(c2) ;
+                    g.executerLaTache(c3) ;
+    }
+
+}

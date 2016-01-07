@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;&apos; to &apos;Noeud.majValeur(...)&apos;&#x0D;&#x0A;- Original project: &apos;cooAvanceTD5&apos;&#x0D;&#x0A;- Destination element: &apos;Noeud.majValeur(...)&apos;&#x0D;&#x0A;- Original element: &apos;Noeud.majValeur(...)&apos;" description="Copy method" destination="/src&lt;{Noeud.java[Noeud~majValeur~I" element1="/src&lt;{Noeud.java[Noeud~majValeur~I" flags="589830" id="org.eclipse.jdt.ui.copy" members="1" policy="org.eclipse.jdt.ui.copyMembers" stamp="1449574114764" version="1.0"/>
+</session>

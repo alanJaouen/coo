@@ -40,7 +40,7 @@ public class Noeud {
 
     @objid ("a3c3d10f-0417-43ed-a61c-af4f97161831")
 	public void majValeur(int value) {
-		this.valeur = value;
+		this.valeur = this.getValeur()+(value*this.getCapacite());
 	}
 
 

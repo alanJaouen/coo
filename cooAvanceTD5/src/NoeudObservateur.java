@@ -16,7 +16,7 @@ public class NoeudObservateur extends Noeud implements Observateur {
 
     @objid ("195f3ddb-bec4-4eb8-a4ff-32ef8396c63d")
     public void actualiser(int v) {
-		this.majValeur(this.getValeur()+(v*this.getCapacite()));
+		this.majValeur(v);
     }
 
 }
